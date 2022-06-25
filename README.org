@@ -1,2 +1,3 @@
-#+title nixos-vm-dots
+#+title: nixos-vm-dots
+
 my nixos vm dotfiles
