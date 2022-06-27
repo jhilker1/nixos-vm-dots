@@ -29,6 +29,10 @@
     pass
     rofi-pass
     rofi
+    (python310.withPackages(p: with p; [
+      numpy
+      pandas
+      ]))
   ];
   
   home.sessionVariables = {
