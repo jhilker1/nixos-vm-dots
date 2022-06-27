@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
+{lib, config, pkgs, ... }:
 
 {
+
+
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "jhilker";
@@ -23,7 +25,15 @@
     neovim
     alacritty
     firefox
+    gcalcli
+    pass
+    rofi-pass
+    rofi
   ];
+  
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 
   programs.zsh = {
     enable = true;
@@ -53,4 +63,6 @@
   programs.gpg = {
     enable = true;
   };
+
+
 }
